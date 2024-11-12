@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .search-container {
+            background-color: lightblue;
+            padding: 150px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .search-form {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .search-category {
+            padding: 10px;
+            border: 0px solid #ddd;
+            border-radius: 20px 0 0 20px;
+            font-size: 16px;
+            margin-right: -5px;
+            background-color: purple;
+            color: #ffffff;
+        }
+
+        .search-input {
+            width: 300px;
+            padding: 10px;
+            border: 2px solid #ddd;
+            border-left: none;
+            font-size: 16px;
+            color: "brown";
+        }
+
+        .search-button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #007BFF;
+            color: #fff;
+            font-size: 16px;
+            border-radius: 0 5px 5px 0;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .search-button:hover {
+            background-color: #0056b3;
+        }
+
+        option {
+            background-color: #ffffff;
+            color: black;
+        }
+
+        h1 {
+            color: #333;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Interface</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="search-container">
+        <form class="search-form">
+            <select class="search-category">
+                <option value="web-development">Everything</option>
+                <option value="web-development">software development</option>
+                <option value="web-development">web development</option>
+                <option value="web-development">Data Analyst</option>
+                <option value="web-development">IT Consultent</option>
+                <option value="web-development">Network administrator</option>
+            </select>
+            <input type="text" class="search-input" placeholder="Search Anything">
+            <button type="submit" class="search-button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                </svg></button>
+        </form>
+    </div>
+</body>
+
+</html>
